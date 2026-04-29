@@ -346,7 +346,7 @@ export function BenefitsScreen({ benefits }: { benefits?: { name: string; descri
               {"cat" in b && <span className="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full">{(b as typeof DEFAULT_BENEFITS[0]).cat}</span>}
             </div>
             <p className="text-sm text-gray-600 mb-3">
-              {"eligibility" in b ? (b as {eligibility:string}).eligibility : b.description}
+              {"eligibility" in b ? (b as {eligibility:string}).eligibility : b.desc}
             </p>
             <div className="flex items-center gap-4 text-xs text-gray-500">
               <span className="flex items-center gap-1"><Phone className="w-3 h-3" />{b.phone}</span>
