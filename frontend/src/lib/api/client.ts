@@ -27,6 +27,7 @@ const TOKEN_KEY = "paperwork_tokens_v2";
 export type Tokens = {
   access_token: string;
   refresh_token: string;
+  token_type: string;
 };
 
 export function getTokens(): Tokens | null {
